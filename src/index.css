@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-zinc-400;
+  }
+
+  button {
+    @apply touch-manipulation;
+  }
+
+  svg:not(fill) {
+    @apply fill-current;
+  }
+
+  [druggable] {
+    @apply select-none;
+  }
+}
+
+@layer components {
+  .hidden-visually {
+    @apply border-0 h-px -m-px overflow-hidden p-0 absolute w-px;
+    clip: rect(0 0 0 0);
+  }
+
+  .scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+}

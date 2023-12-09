@@ -1,6 +1,6 @@
 [package]
 name = "local-spotify"
-version = "0.0.0"
+version = "0.0.1"
 description = "Local music player with Spotify's UI"
 authors = ["Kağan Ege"]
 license = "MIT"
@@ -12,7 +12,7 @@ edition = "2021"
 tauri-build = { version = "1.5", features = [] }
 
 [dependencies]
-tauri = { version = "1.5", features = [ "protocol-asset", "path-all"] }
+tauri = { version = "1.5", features = ["protocol-asset", "path-all"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 id3 = "1.9.0"
